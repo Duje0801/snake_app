@@ -1,0 +1,262 @@
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 5rem;
+$gapS: 5px;
+$gapM: 10px;
+$gapL: 30px;
+$borderS: 2px solid black;
+$border: 5px solid black;
+
+.gameG {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gapL;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .gameG {
+    flex-direction: column;
+  }
+}
+
+.countingNumberG {
+  font-size: $fontXL;
+  user-select: none;
+}
+
+.scoreboardG {
+  display: flex;
+  justify-content: space-around;
+  width: 560px;
+  margin: $gapM auto;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1368px) {
+  .scoreboardG {
+    width: 453.2px;
+    margin: $gapS auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .scoreboardG {
+    width: 323.2px;
+    margin: $gapS auto;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .scoreboardG {
+    width: 303.2px;
+    margin: $gapS auto;
+  }
+}
+
+.scoreboardG > button {
+  background-color: white;
+  border: $border;
+  font-family: "Press Start 2P", cursive;
+  width: 160px;
+  font-size: $fontS;
+  padding: $gapM;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1368px) {
+  .scoreboardG > button {
+    font-size: $fontXS;
+    padding: $gapS;
+    border: $borderS;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .scoreboardG > button {
+    font-size: $fontXXS;
+  }
+}
+
+.scoreboardG > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $fontS;
+  width: 250px;
+}
+
+@media only screen and (max-width: 1368px) {
+  .scoreboardG > div {
+    font-size: $fontXS;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .scoreboardG > div {
+    font-size: $fontXXS;
+  }
+}
+
+.boardG {
+  width: 550px;
+  height: 550px;
+  display: grid;
+  border: $border;
+}
+
+@media only screen and (max-width: 1368px) {
+  .boardG {
+    width: 450px;
+    height: 450px;
+    border: $borderS;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .boardG {
+    width: 320px;
+    height: 320px;
+    border: $borderS;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .boardG {
+    width: 300px;
+    height: 300px;
+    border: $borderS;
+  }
+}
+
+.modalBackgroundG {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(black, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalG {
+  width: fit-content;
+  padding: $gapM;
+  height: fit-content;
+  background-color: white;
+  text-align: center;
+  border: $border;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .modalG {
+    border: $borderS;
+  }
+}
+
+.modalG > div {
+  font-size: $fontL;
+  margin: $gapL 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .modalG > div {
+    font-size: $fontS;
+  }
+}
+
+.additionModalG {
+  padding: $gapM;
+}
+
+@media only screen and (max-width: 1024px) {
+  /// Da nema razmaka u tekstu u Quit Modalu
+  .additionModalG {
+    padding: $gapS;
+    width: 300px;
+  }
+  .additionModalG > div:nth-child(1) {
+    margin-bottom: 0px;
+  }
+  .additionModalG > div:nth-child(2) {
+    margin-top: 0px;
+  }
+}
+
+.modalBtnG {
+  font-family: "Press Start 2P", cursive;
+  font-size: $fontL;
+  background-color: white;
+  padding: $gapM;
+  border: $border;
+  cursor: pointer;
+  margin: 0px $gapL;
+  width: 375px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1368px) {
+  .modalBtnG {
+    font-size: $fontS;
+    border: $borderS;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .modalBtnG {
+    font-size: $fontXS;
+  }
+}
+
+.arrowsG {
+  font-size: $fontXL;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .arrowsG {
+    font-size: $fontM;
+  }
+}
+
+.selectionOptionG {
+  width: 480px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .selectionOptionG {
+    width: 200px;
+  }
+}
+
+.joystickG {
+  display: none;
+}
+
+@media only screen and (max-width: 1368px) {
+  .joystickG {
+    display: block;
+  }
+  .joystickG > div {
+    display: flex;
+    justify-content: center;
+    font-size: $fontL;
+  }
+  .joystickMiddleG {
+    width: 48px;
+    height: 48px;
+  }
+  .letterG {
+    display: none;
+  }
+}

@@ -1,0 +1,368 @@
+.recordsR {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .recordsR {
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .recordsR {
+    gap: 5px;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 920px) and (orientation: portrait) {
+  .recordsR {
+    flex-direction: column;
+    gap: 5px;
+    margin: auto;
+  }
+}
+.recordsLeftR {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableR {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .tableR {
+    font-size: 1rem;
+  }
+}
+.noRecordsR {
+  font-size: 2rem;
+  margin: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: center;
+  width: 839.6px;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .noRecordsR {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 30px auto;
+  }
+}
+@media only screen and (max-width: 1180px) and (orientation: landscape) {
+  .noRecordsR {
+    width: 739.6px;
+  }
+}
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .noRecordsR {
+    width: 616px;
+  }
+}
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .noRecordsR {
+    width: 303.2px;
+  }
+}
+@media only screen and (max-width: 860px) and (orientation: landscape) {
+  .noRecordsR {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .noRecordsR {
+    width: 412.2px;
+  }
+}
+@media only screen and (max-width: 650px) and (orientation: landscape) {
+  .noRecordsR {
+    width: 350px;
+  }
+}
+.tableTitleR {
+  font-size: 3rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin: 0px 30px 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .tableTitleR {
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+}
+.tableHeaderR > th {
+  padding: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .tableHeaderR > th {
+    font-size: 0.75rem;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .tableHeaderR > th:nth-child(4) {
+    display: none;
+  }
+  .tableHeaderR > th:nth-child(5) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 900px) and (orientation: landscape) {
+  .tableHeaderR > th {
+    font-size: 0.75rem;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .tableHeaderR > th:nth-child(4) {
+    display: none;
+  }
+  .tableHeaderR > th:nth-child(5) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1368px) and (orientation: landscape) {
+  .tableHeaderR > th {
+    font-size: 1rem;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+  .tableHeaderR > th {
+    font-size: 0.6rem;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .tableHeaderR > th:nth-child(4) {
+    display: none;
+  }
+  .tableHeaderR > th:nth-child(5) {
+    display: none;
+  }
+}
+.tableBodyR > td {
+  padding: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .tableBodyR > td {
+    font-size: 0.75rem;
+    width: 175px;
+  }
+  .tableBodyR > td:nth-child(4) {
+    display: none;
+  }
+  .tableBodyR > td:nth-child(5) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 900px) and (orientation: landscape) {
+  .tableBodyR > td {
+    font-size: 0.75rem;
+    width: 175px;
+  }
+  .tableBodyR > td:nth-child(4) {
+    display: none;
+  }
+  .tableBodyR > td:nth-child(5) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1368px) and (orientation: landscape) {
+  .tableBodyR > td {
+    font-size: 1rem;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+  .tableBodyR > td {
+    font-size: 0.6rem;
+    width: 175px;
+  }
+  .tableBodyR > td:nth-child(4) {
+    display: none;
+  }
+  .tableBodyR > td:nth-child(5) {
+    display: none;
+  }
+}
+.usernameR {
+  width: 360px;
+}
+
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+  .usernameR {
+    width: 280px;
+  }
+}
+.QuitR {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 5px;
+  width: 292px;
+  margin: 10px auto;
+  background-color: white;
+  border: 5px solid black;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .QuitR {
+    font-size: 0.75rem;
+    border: 2px solid black;
+    margin: 5px auto;
+  }
+}
+.sortingRecordsR {
+  display: flex;
+  flex-direction: column;
+  width: 312px;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .sortingRecordsR {
+    gap: 0px;
+    margin: 0px auto;
+    width: 375px;
+  }
+}
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .sortingRecordsR {
+    gap: 0px;
+    margin: auto;
+    width: 250px;
+  }
+}
+.selectionR {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .selectionR {
+    gap: 0px;
+    margin: 5px auto;
+    width: 375px;
+  }
+}
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .selectionR {
+    gap: 0px;
+    margin: 0px auto;
+    width: 250px;
+  }
+}
+.showAllDivR,
+.selectionR > div {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.5rem;
+  padding: 5px;
+  width: 292px;
+  margin: 10px 0px;
+  background-color: white;
+  border: 5px solid black;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.showAllDivR {
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .showAllDivR,
+  .selectionR > div {
+    font-size: 0.75rem;
+    border: 2px solid black;
+    margin: 5px auto;
+  }
+}
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .showAllDivR,
+  .selectionR > div {
+    font-size: 0.75rem;
+    border: 2px solid black;
+    margin: 5px auto;
+    width: 200px;
+  }
+}
+.selectionR > div:first-child {
+  border: 0px;
+  margin: 5px 0px 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .selectionR > div:first-child {
+    font-size: 0.75rem;
+    margin-left: 34.5px;
+  }
+}
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .selectionR > div:first-child {
+    font-size: 0.75rem;
+    margin-left: 18.4px;
+  }
+}
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .selectionR > div:first-child {
+    font-size: 0.75rem;
+    margin-left: 18.4px;
+  }
+}
+@media only screen and (max-width: 641px) and (orientation: portrait) {
+  .selectionR > div:first-child {
+    margin-top: 0px;
+  }
+}
+.helpR {
+  position: absolute;
+  bottom: 30px;
+  font-size: 1.5rem;
+  width: 1241.6px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1368px) {
+  .helpR {
+    display: none;
+  }
+  .letterR {
+    display: none;
+  }
+}/*# sourceMappingURL=Records.css.map */

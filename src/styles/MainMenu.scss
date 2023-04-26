@@ -1,0 +1,112 @@
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 5rem;
+$gapS: 5px;
+$gapM: 10px;
+$gapL: 30px;
+$borderS: 2px solid black;
+$border: 5px solid black;
+
+@keyframes titleAnimation {
+  0% {
+    transform: translate(-100vw);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes optionAnimation {
+  0% {
+    transform: translate(100vw);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+.mainMenuMM {
+  display: flex;
+  flex-direction: column;
+  gap: $gapL;
+  height: fit-content;
+  width: fit-content;
+}
+
+.titleMM {
+  animation: titleAnimation 1s linear;
+  text-align: center;
+  font-size: $fontXL;
+  user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .titleMM {
+    font-size: $fontL;
+  }
+}
+
+.selectionMM {
+  animation: optionAnimation 1s linear;
+  display: flex;
+  align-items: center;
+  gap: $gapL;
+}
+
+@media only screen and (max-width: 768px) {
+  .selectionMM {
+    gap: $gapM;
+  }
+}
+
+.optionMM {
+  font-size: $fontL;
+  width: 450px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .optionMM {
+    font-size: $fontM;
+    width: 256px;
+  }
+}
+
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+  .optionMM {
+    font-size: $fontS;
+    width: 225px;
+  }
+}
+
+.arrowMM {
+  font-size: $fontXL;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .arrowMM {
+    font-size: $fontM;
+  }
+}
+
+.helpMM {
+  position: absolute;
+  bottom: $gapL;
+  font-size: $fontS;
+  width: 670px;
+  text-align: center;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1368px) {
+  .helpMM {
+    display: none;
+  }
+}

@@ -1,0 +1,295 @@
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 5rem;
+$gapS: 5px;
+$gapM: 10px;
+$gapL: 30px;
+$borderS: 2px solid black;
+$border: 5px solid black;
+
+.divsUpS {
+  display: flex;
+  gap: $gapL;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .divsUpS {
+    flex-direction: column;
+    gap: $gapS;
+  }
+}
+
+.selectionColumnS {
+  display: flex;
+  flex-direction: column;
+  font-size: $fontM;
+  width: 450px;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 1368px) and (orientation: landscape) {
+  .selectionColumnS {
+    font-size: $fontS;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .selectionColumnS {
+    font-size: $fontS;
+    width: 166px;
+  }
+}
+
+.selectionTitleS {
+  width: 100%;
+  user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .selectionTitleS {
+    font-size: $fontXS;
+  }
+}
+
+@media only screen and (max-width: 1368px) and (orientation: landscape) {
+  .selectionColumnS {
+    font-size: $fontS;
+  }
+}
+
+.selectionOptionS {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Press Start 2P", cursive;
+  font-size: $fontM;
+  padding: $gapM;
+  margin: $gapS 0px;
+  background-color: white;
+  border: $border;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1368px) and (orientation: landscape) {
+  .selectionOptionS {
+    font-size: $fontS;
+    border: $borderS;
+    width: 176px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .selectionOptionS {
+    font-size: $fontXS;
+    border: $borderS;
+    padding: $gapS;
+    width: 152px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .selectionOptionS {
+    font-size: $fontXS;
+    border: $borderS;
+    padding: $gapS;
+    width: 236px;
+  }
+}
+
+.selectionOptionS:focus {
+  outline: 0;
+}
+
+.btnsMidS {
+  display: flex;
+  justify-content: space-between;
+  gap: $gapL;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .btnsMidS {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: $gapM;
+  }
+}
+
+.btnsMidS > button,
+.btnBottomS > button {
+  display: flex;
+  font-family: "Press Start 2P", cursive;
+  font-size: $fontM;
+  padding: $gapM;
+  width: 690px;
+  margin: $gapM 0px;
+  background-color: white;
+  border: $border;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1368px) and (orientation: landscape) {
+  .btnsMidS > button,
+  .btnBottomS > button {
+    align-items: center;
+    font-size: $fontS;
+    width: 300px;
+    border: $borderS;
+    margin: $gapS 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .btnsMidS > button,
+  .btnBottomS > button {
+    align-items: center;
+    font-size: $fontXS;
+    width: 250px;
+    border: $borderS;
+    padding: $gapS;
+    margin: $gapS 0px;
+  }
+}
+
+.btnBottomS {
+  display: flex;
+  justify-content: center;
+}
+
+.controlsS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.controlsS > div {
+  font-size: $fontM;
+  margin: $gapL;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .controlsS > div {
+    font-size: $fontXS;
+    margin: $gapM;
+  }
+}
+
+.controlsBtnS {
+  display: flex;
+  font-family: "Press Start 2P", cursive;
+  font-size: $fontM;
+  padding: $gapM;
+  width: 640px;
+  margin: $gapL auto;
+  background-color: white;
+  border: $border;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1368px) {
+  .controlsBtnS {
+    font-size: $fontS;
+    width: 250px;
+    margin: $gapM auto;
+    border: $borderS;
+  }
+}
+
+.CUtitleS {
+  font-size: $fontL;
+  text-align: center;
+  margin: $gapL;
+  user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .CUtitleS {
+    font-size: $fontM;
+    margin: $gapL auto;
+    width: 80vw;
+  }
+}
+
+.CUformS {
+  display: flex;
+  flex-direction: column;
+}
+
+.CUformS > input {
+  font-size: $fontM;
+  padding: $gapM;
+  max-width: 500px;
+  margin: 0px auto;
+  font-family: "Press Start 2P", cursive;
+  border: $border;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .CUformS > input {
+    font-size: $fontS;
+    max-width: 80vw;
+    border: $borderS;
+  }
+}
+
+.CUformS > button {
+  display: flex;
+  justify-content: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: $fontM;
+  padding: $gapM;
+  background-color: white;
+  border: $border;
+  margin: auto;
+  user-select: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .CUformS > button {
+    font-size: $fontS;
+    border: $borderS;
+  }
+}
+
+.CUalertS {
+  font-size: $fontXS;
+  width: 1056px;
+  height: 16px;
+  margin: 7px;
+  text-align: center;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .CUalertS {
+    font-size: $fontXXS;
+  }
+}
+
+.helpS {
+  position: absolute;
+  bottom: 50px;
+  font-size: $fontS;
+  width: 1410px;
+  text-align: center;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1368px) {
+  .helpS {
+    display: none;
+  }
+  .letterS {
+    display: none;
+  }
+}

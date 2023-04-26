@@ -1,0 +1,285 @@
+.divsUpS {
+  display: flex;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .divsUpS {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.selectionColumnS {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  width: 450px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 1368px) and (orientation: landscape) {
+  .selectionColumnS {
+    font-size: 1.5rem;
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .selectionColumnS {
+    font-size: 1.5rem;
+    width: 166px;
+  }
+}
+.selectionTitleS {
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .selectionTitleS {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1368px) and (orientation: landscape) {
+  .selectionColumnS {
+    font-size: 1.5rem;
+  }
+}
+.selectionOptionS {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 5px 0px;
+  background-color: white;
+  border: 5px solid black;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1368px) and (orientation: landscape) {
+  .selectionOptionS {
+    font-size: 1.5rem;
+    border: 2px solid black;
+    width: 176px;
+  }
+}
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .selectionOptionS {
+    font-size: 1rem;
+    border: 2px solid black;
+    padding: 5px;
+    width: 152px;
+  }
+}
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .selectionOptionS {
+    font-size: 1rem;
+    border: 2px solid black;
+    padding: 5px;
+    width: 236px;
+  }
+}
+.selectionOptionS:focus {
+  outline: 0;
+}
+
+.btnsMidS {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .btnsMidS {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 10px;
+  }
+}
+.btnsMidS > button,
+.btnBottomS > button {
+  display: flex;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  padding: 10px;
+  width: 690px;
+  margin: 10px 0px;
+  background-color: white;
+  border: 5px solid black;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1368px) and (orientation: landscape) {
+  .btnsMidS > button,
+  .btnBottomS > button {
+    align-items: center;
+    font-size: 1.5rem;
+    width: 300px;
+    border: 2px solid black;
+    margin: 5px 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .btnsMidS > button,
+  .btnBottomS > button {
+    align-items: center;
+    font-size: 1rem;
+    width: 250px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px 0px;
+  }
+}
+.btnBottomS {
+  display: flex;
+  justify-content: center;
+}
+
+.controlsS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.controlsS > div {
+  font-size: 2rem;
+  margin: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .controlsS > div {
+    font-size: 1rem;
+    margin: 10px;
+  }
+}
+.controlsBtnS {
+  display: flex;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  padding: 10px;
+  width: 640px;
+  margin: 30px auto;
+  background-color: white;
+  border: 5px solid black;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1368px) {
+  .controlsBtnS {
+    font-size: 1.5rem;
+    width: 250px;
+    margin: 10px auto;
+    border: 2px solid black;
+  }
+}
+.CUtitleS {
+  font-size: 3rem;
+  text-align: center;
+  margin: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .CUtitleS {
+    font-size: 2rem;
+    margin: 30px auto;
+    width: 80vw;
+  }
+}
+.CUformS {
+  display: flex;
+  flex-direction: column;
+}
+
+.CUformS > input {
+  font-size: 2rem;
+  padding: 10px;
+  max-width: 500px;
+  margin: 0px auto;
+  font-family: "Press Start 2P", cursive;
+  border: 5px solid black;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .CUformS > input {
+    font-size: 1.5rem;
+    max-width: 80vw;
+    border: 2px solid black;
+  }
+}
+.CUformS > button {
+  display: flex;
+  justify-content: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  padding: 10px;
+  background-color: white;
+  border: 5px solid black;
+  margin: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .CUformS > button {
+    font-size: 1.5rem;
+    border: 2px solid black;
+  }
+}
+.CUalertS {
+  font-size: 1rem;
+  width: 1056px;
+  height: 16px;
+  margin: 7px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .CUalertS {
+    font-size: 0.75rem;
+  }
+}
+.helpS {
+  position: absolute;
+  bottom: 50px;
+  font-size: 1.5rem;
+  width: 1410px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1368px) {
+  .helpS {
+    display: none;
+  }
+  .letterS {
+    display: none;
+  }
+}/*# sourceMappingURL=Settings.css.map */

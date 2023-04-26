@@ -1,0 +1,107 @@
+.titleL {
+  font-size: 5rem;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .titleL {
+    font-size: 3rem;
+  }
+}
+.titleHelpL {
+  font-size: 3rem;
+  text-align: center;
+  margin: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .titleHelpL {
+    font-size: 2rem;
+    margin: 30px auto;
+    width: 80vw;
+  }
+}
+.formL {
+  display: flex;
+  flex-direction: column;
+}
+
+.formL > input {
+  font-size: 2rem;
+  padding: 10px;
+  max-width: 500px;
+  margin: 0px auto;
+  font-family: "Press Start 2P", cursive;
+  border: 5px solid black;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .formL > input {
+    font-size: 1.5rem;
+    max-width: 80vw;
+    border: 2px solid black;
+  }
+}
+.formL > input:focus {
+  outline: none;
+}
+
+.formL > button {
+  display: flex;
+  justify-content: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  padding: 10px;
+  background-color: white;
+  border: 5px solid black;
+  margin: 0px auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .formL > button {
+    font-size: 1.5rem;
+    border: 2px solid black;
+  }
+}
+.alertL {
+  font-size: 1rem;
+  width: 924px;
+  height: 16px;
+  margin: 7px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.helpL {
+  position: absolute;
+  bottom: 30px;
+  font-size: 1.5rem;
+  width: 924px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1368px) {
+  .helpL {
+    display: none;
+  }
+}/*# sourceMappingURL=LogIn.css.map */

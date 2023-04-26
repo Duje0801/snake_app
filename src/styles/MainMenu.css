@@ -1,0 +1,103 @@
+@keyframes titleAnimation {
+  0% {
+    transform: translate(-100vw);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@keyframes optionAnimation {
+  0% {
+    transform: translate(100vw);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+.mainMenuMM {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.titleMM {
+  animation: titleAnimation 1s linear;
+  text-align: center;
+  font-size: 5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .titleMM {
+    font-size: 3rem;
+  }
+}
+.selectionMM {
+  animation: optionAnimation 1s linear;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .selectionMM {
+    gap: 10px;
+  }
+}
+.optionMM {
+  font-size: 3rem;
+  width: 450px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .optionMM {
+    font-size: 2rem;
+    width: 256px;
+  }
+}
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+  .optionMM {
+    font-size: 1.5rem;
+    width: 225px;
+  }
+}
+.arrowMM {
+  font-size: 5rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .arrowMM {
+    font-size: 2rem;
+  }
+}
+.helpMM {
+  position: absolute;
+  bottom: 30px;
+  font-size: 1.5rem;
+  width: 670px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1368px) {
+  .helpMM {
+    display: none;
+  }
+}/*# sourceMappingURL=MainMenu.css.map */

@@ -1,0 +1,389 @@
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 5rem;
+$gapS: 5px;
+$gapM: 10px;
+$gapL: 30px;
+$borderS: 2px solid black;
+$border: 5px solid black;
+
+.recordsR {
+  display: flex;
+  gap: $gapL;
+  margin-bottom: $gapL;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .recordsR {
+    flex-direction: column;
+    gap: $gapM;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .recordsR {
+    gap: $gapS;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 920px) and (orientation: portrait) {
+  .recordsR {
+    flex-direction: column;
+    gap: $gapS;
+    margin: auto;
+  }
+}
+
+.recordsLeftR {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableR {
+  font-size: $fontS;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .tableR {
+    font-size: $fontXS;
+  }
+}
+
+.noRecordsR {
+  font-size: $fontM;
+  margin: $gapL;
+  user-select: none;
+  text-align: center;
+  width: 839.6px;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .noRecordsR {
+    font-size: $fontS;
+    text-align: center;
+    margin: $gapL auto;
+  }
+}
+
+@media only screen and (max-width: 1180px) and (orientation: landscape) {
+  .noRecordsR {
+    width: 739.6px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .noRecordsR {
+    width: 616px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .noRecordsR {
+    width: 303.2px;
+  }
+}
+
+@media only screen and (max-width: 860px) and (orientation: landscape) {
+  .noRecordsR {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .noRecordsR {
+    width: 412.2px;
+  }
+}
+
+@media only screen and (max-width: 650px) and (orientation: landscape) {
+  .noRecordsR {
+    width: 350px;
+  }
+}
+
+.tableTitleR {
+  font-size: $fontL;
+  user-select: none;
+  margin: 0px $gapL $gapL;
+}
+
+@media only screen and (max-width: 1024px) {
+  .tableTitleR {
+    font-size: $fontS;
+    margin: $gapM;
+  }
+}
+
+.tableHeaderR > th {
+  padding: $gapS;
+  user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .tableHeaderR > th {
+    font-size: $fontXXS;
+    width: fit-content;
+  }
+  .tableHeaderR > th:nth-child(4) {
+    display: none;
+  }
+  .tableHeaderR > th:nth-child(5) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 900px) and (orientation: landscape) {
+  .tableHeaderR > th {
+    font-size: $fontXXS;
+    width: fit-content;
+  }
+  .tableHeaderR > th:nth-child(4) {
+    display: none;
+  }
+  .tableHeaderR > th:nth-child(5) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1368px) and (orientation: landscape) {
+  .tableHeaderR > th {
+    font-size: $fontXS;
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+  .tableHeaderR > th {
+    font-size: 0.6rem;
+    width: fit-content;
+  }
+  .tableHeaderR > th:nth-child(4) {
+    display: none;
+  }
+  .tableHeaderR > th:nth-child(5) {
+    display: none;
+  }
+}
+
+.tableBodyR > td {
+  padding: $gapS;
+  user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .tableBodyR > td {
+    font-size: $fontXXS;
+    width: 175px;
+  }
+  .tableBodyR > td:nth-child(4) {
+    display: none;
+  }
+  .tableBodyR > td:nth-child(5) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 900px) and (orientation: landscape) {
+  .tableBodyR > td {
+    font-size: $fontXXS;
+    width: 175px;
+  }
+  .tableBodyR > td:nth-child(4) {
+    display: none;
+  }
+  .tableBodyR > td:nth-child(5) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1368px) and (orientation: landscape) {
+  .tableBodyR > td {
+    font-size: $fontXS;
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+  .tableBodyR > td {
+    font-size: 0.6rem;
+    width: 175px;
+  }
+  .tableBodyR > td:nth-child(4) {
+    display: none;
+  }
+  .tableBodyR > td:nth-child(5) {
+    display: none;
+  }
+}
+
+.usernameR{
+  width: 360px;
+}
+
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+  .usernameR{
+    width: 280px;
+  }
+}
+
+.QuitR {
+  display: flex;
+  justify-content: center;
+  font-size: $fontS;
+  padding: $gapS;
+  width: 292px;
+  margin: $gapM auto;
+  background-color: white;
+  border: $border;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .QuitR {
+    font-size: $fontXXS;
+    border: $borderS;
+    margin: $gapS auto;
+  }
+}
+
+.sortingRecordsR {
+  display: flex;
+  flex-direction: column;
+  width: 312px;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .sortingRecordsR {
+    gap: 0px;
+    margin: 0px auto;
+    width: 375px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .sortingRecordsR {
+    gap: 0px;
+    margin: auto;
+    width: 250px;
+  }
+}
+
+.selectionR {
+  display: flex;
+  flex-direction: column;
+  font-size: $fontM;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .selectionR {
+    gap: 0px;
+    margin: $gapS auto;
+    width: 375px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .selectionR {
+    gap: 0px;
+    margin: 0px auto;
+    width: 250px;
+  }
+}
+
+.showAllDivR,
+.selectionR > div {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Press Start 2P", cursive;
+  font-size: $fontS;
+  padding: $gapS;
+  width: 292px;
+  margin: $gapM 0px;
+  background-color: white;
+  border: $border;
+  cursor: pointer;
+  user-select: none;
+}
+
+.showAllDivR {
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .showAllDivR,
+  .selectionR > div {
+    font-size: $fontXXS;
+    border: $borderS;
+    margin: $gapS auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .showAllDivR,
+  .selectionR > div {
+    font-size: $fontXXS;
+    border: $borderS;
+    margin: $gapS auto;
+    width: 200px;
+  }
+}
+
+.selectionR > div:first-child {
+  border: 0px;
+  margin: $gapS 0px 0px;
+  width: fit-content;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .selectionR > div:first-child {
+    font-size: $fontXXS;
+    margin-left: 34.5px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .selectionR > div:first-child {
+    font-size: $fontXXS;
+    margin-left: 18.4px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .selectionR > div:first-child {
+    font-size: $fontXXS;
+    margin-left: 18.4px;
+  }
+}
+
+@media only screen and (max-width: 641px) and (orientation: portrait) {
+  .selectionR > div:first-child {
+    margin-top: 0px;
+  }
+}
+
+.helpR {
+  position: absolute;
+  bottom: $gapL;
+  font-size: $fontS;
+  width: 1241.6px;
+  text-align: center;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1368px) {
+  .helpR {
+    display: none;
+  }
+  .letterR {
+    display: none;
+  }
+}
