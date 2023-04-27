@@ -46,7 +46,7 @@ function Board({ setOpenGOModal, setOpenQuitModal }) {
       setFoodPosition(FoodPositionFunction(snakeArray, size, true));
       setSnakeArray(CreateFirstSnake(size));
       setScore(0);
-      setDirection(`ArrowRight`)
+      setDirection(`ArrowRight`);
       return;
     }
 
@@ -90,11 +90,11 @@ function Board({ setOpenGOModal, setOpenQuitModal }) {
       // Checking if player directing snake to direction opposite of direction where snake is going
       if (!CheckDirection(e.code, direction)) return;
       // Direction is changing only press arrows, ignoring other keys
-      BoardDirectionKD(e, setDirection)
+      BoardDirectionKD(e, setDirection);
     };
 
-      window.addEventListener(`keydown`, handleKeydown);
-      return () => window.removeEventListener(`keydown`, handleKeydown);  
+    window.addEventListener(`keydown`, handleKeydown);
+    return () => window.removeEventListener(`keydown`, handleKeydown);
   }, [snakeArray]);
 
   // Stopping game with pressing certain keys on the keyboard

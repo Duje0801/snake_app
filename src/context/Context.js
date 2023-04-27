@@ -36,7 +36,7 @@ export function AppContexProvider(Component) {
     }, []);
 
     const valuesToShare = {
-      snakeArray, 
+      snakeArray,
       setSnakeArray,
       userName,
       setUserName,
